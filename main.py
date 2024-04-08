@@ -4,6 +4,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 
 class CustomBoxLayout(BoxLayout):
+  pass
   """  def __init__(self, **kwargs):
         super().__init__(**kwargs)
         b1 = Button(text="1")
