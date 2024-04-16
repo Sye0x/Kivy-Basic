@@ -1,14 +1,36 @@
-CustomAnchorLayout:
-    anchor_x: 'right'
-    anchor_y: 'top'
+CustomStackLayout:
+
+
+<CustomStackLayout>:
+    
+
+<CustomGridLayout>:
+    cols: 3
+    Button:
+        size_hint: .5,1.0
+        text:'A'
+    CustomBoxLayout:
+    Button:
+        text:'C'
+    Button:
+        size_hint: .5,1.0
+        text:'D'
+    Button:
+        text:'E'
+    Button:
+        text:'F'
+    
+    
+<CustomBoxLayout>:
+    orientation:'vertical'
+    Button:
+        text:'A'
     BoxLayout:
-        size_hint: .2,.2
-        orientation:'horizontal'
-        Button:
-            text: 'A'
+        orientation: 'vertical'
         Button:
             text:'B'
         Button:
             text:'C'
-    
+        Button:
+            text:'D'
     
