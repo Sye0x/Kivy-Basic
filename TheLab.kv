@@ -1,8 +1,13 @@
-CustomStackLayout:
+CustomScrollView:
+
+<CustomScrollView>:
+    CustomStackLayout:
+        size_hint: 1, None
+        height: self.minimum_height if self.children else 1
 
 
 <CustomStackLayout>:
-    
+    padding: ('20dp', '20dp', '20dp', '20dp')
 
 <CustomGridLayout>:
     cols: 3
