@@ -17,7 +17,7 @@ class CustomStackLayout(StackLayout):
         super().__init__(**kwargs)
         self.orientation="lr-tb"
      
-        for i in range(1,10):
+        for i in range(1,100):
             b=Button(text=str(i), size_hint=(.2,.2))
             self.add_widget(b)
             
