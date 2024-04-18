@@ -1,17 +1,19 @@
-def majorityElement( nums):
-    candidate = None
-    count = 0
+def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        candidate = None
+        count = 0
 
-    for num in nums:
-        if count == 0:
-            candidate = num
+        for num in nums:
+            if count == 0:
+                candidate = num
 
-        if candidate == num:
-            count += 1
-        else:
-            count -= 1
+            if candidate == num:
+                count += 1
+            else:
+                count -= 1
 
-    return candidate
-nums=[2,2,1,1,1,3,3]
-print(majorityElement(nums))
+        return candidate
 
