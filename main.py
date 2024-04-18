@@ -1,19 +1,46 @@
-def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        candidate = None
-        count = 0
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.metrics import dp
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.scrollview import ScrollView
+from kivy.uix.anchorlayout import AnchorLayout
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.stacklayout import StackLayout
+from kivy.uix.button import Button
 
-        for num in nums:
-            if count == 0:
-                candidate = num
+class CustomScrollView(ScrollView):
+    pass
 
-            if candidate == num:
-                count += 1
-            else:
-                count -= 1
+class CustomStackLayout(StackLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.orientation="lr-tb"
+     
+        for i in range(1,100):
+            b=Button(text=str(i), size_hint=(.2,.2))
+            self.add_widget(b)
+            
 
-        return candidate
+class CustomAnchorLayout(AnchorLayout):
+    pass
 
+class CustomGridLayout(GridLayout):
+    pass
+
+class CustomBoxLayout(BoxLayout):
+  pass
+  """  def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        b1 = Button(text="1")
+        b2 = Button(text="2")
+        
+        self.add_widget(b1)
+        self.add_widget(b2)"""
+
+class MainWidget(Widget):
+    pass
+
+class TheLab(App):
+    pass
+
+TheLab().run()
