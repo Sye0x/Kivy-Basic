@@ -17,18 +17,44 @@ class mygrid(GridLayout):
 
         
         #Adding Widget
-        self.topgrid.add_widget(Label(text="Name: "))
-        self.name=TextInput(multiline=False)
+        self.topgrid.add_widget(Label(text="Name: ",
+                           font_size=32,
+                           size_hint_y=None,
+                           height=50,
+                           size_hint_x=None,
+                           width=200))
+        self.name=TextInput(multiline=False,
+                           font_size=32,
+                           size_hint_y=None,
+                           height=50,
+                           size_hint_x=None,
+                           width=750)
         self.topgrid.add_widget(self.name)
 
-        self.topgrid.add_widget(Label(text="Age: "))
-        self.age=TextInput(multiline=False)
+        self.topgrid.add_widget(Label(text="Age: ",
+                           font_size=32,
+                           size_hint_y=None,
+                           height=50,
+                           size_hint_x=None,
+                           width=200))
+        self.age=TextInput(multiline=False,
+                           font_size=32,
+                           size_hint_y=None,
+                           height=50,
+                           size_hint_x=None,
+                           width=750)
         self.topgrid.add_widget(self.age)
-        
+
         self.add_widget(self.topgrid)
 
 
-        self.submit=Button(text="Submit")
+        self.submit=Button(text="Submit",
+                           font_size=32,
+                           size_hint_y=None,
+                           height=50,
+                           size_hint_x=None,
+                           width=200
+                           )
         #Binding The Button
         self.submit.bind(on_press=self.press)
         self.add_widget(self.submit)
@@ -37,7 +63,11 @@ class mygrid(GridLayout):
         name=self.name.text
         age=self.age.text
         print(f'')
-        self.add_widget(Label(text=f'Hello, {name}, you are {age} years old'))
+        self.add_widget(Label(text=f'Hello, {name}, you are {age} years old',
+                              font_size=12,
+                           size_hint_y=None,
+                           height=50,
+                           ))
         self.name.text=""
         self.age.text=""
 
