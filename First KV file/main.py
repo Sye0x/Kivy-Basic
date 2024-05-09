@@ -5,18 +5,16 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty
 
 class mygrid(GridLayout):
-    
-    def press(self,instance):
+    name=ObjectProperty(None)
+    age=ObjectProperty(None)
+    def press(self):
         name=self.name.text
         age=self.age.text
-        print(f'')
-        self.add_widget(Label(text=f'Hello, {name}, you are {age} years old',
-                              font_size=12,
-                           size_hint_y=None,
-                           height=50,
-                           ))
+        print(f'Hello, {name}, you are {age} years old')
+        
         self.name.text=""
         self.age.text=""
 

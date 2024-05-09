@@ -70,7 +70,7 @@ class mygrid(GridLayout):
         self.add_widget(Label(text=f'Hello, {name}, you are {age} years old',
                               font_size=12,
                            size_hint_y=None,
-                           height=50,
+                           height=50
                            ))
         self.name.text=""
         self.age.text=""
