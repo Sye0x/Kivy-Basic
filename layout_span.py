@@ -10,7 +10,11 @@ class mygrid(GridLayout):
         super().__init__(**kwargs)
         #set colums
         self.cols=1
-
+        self.row_force_default=True
+        self.row_default_height=80
+        self.row_force_default=True
+        self.row_default_width=30
+        
         #adding another grid on Top
         self.topgrid=GridLayout()
         self.topgrid.cols=2
@@ -70,9 +74,6 @@ class mygrid(GridLayout):
                            ))
         self.name.text=""
         self.age.text=""
-
-
-
 
 class myapp(App):
     def build(self):
