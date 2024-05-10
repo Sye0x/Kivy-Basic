@@ -1,0 +1,30 @@
+<Button>
+    font_size:32
+    spacing: '10dp'
+<Label>
+    font_size:20
+    color: 0 , 0 , 1 , 1
+    
+<TextInput>
+    font_size:26
+  
+<mylayout>
+    BoxLayout:
+        size: root.width,root.height
+        orientation:'vertical'
+        Label:
+            text:'Name'
+        TextInput:
+            multiline:False
+        Label:
+            text:'Age'
+        TextInput:
+            multiline:False
+        Button:
+            text:'Submit'
+            background_color:1,0,0,1
+            color: 0 , 0 , 1, 1
+        Button:
+            text:'Clear'
+            background_color:0,0,1,1
+            color: 1 , 0 , 0 , 1        
