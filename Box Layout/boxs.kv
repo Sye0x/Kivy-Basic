@@ -1,9 +1,19 @@
 <Mylayout>:
     BoxLayout:
-        orientation:'horizontal'
+        orientation:'vertical'
+        size: root.width,root.height
+        padding: ('50dp', '50dp', '50dp', '50dp')
+        spacing: '10dp'
         Button:
             text:'Hello World!!'
+            size_hint: .8,.8
+            pos_hint:{'center_x':0.5}
         Button:
             text:'How are you all ??'
+            size_hint: None,None
+            size: '200dp','150dp'
+            pos_hint:{'center_x':0.5}
         Button:
-            text:'GoodBye World!'    
+            size_hint: .3,.3
+            text:'GoodBye World!'  
+            pos_hint:{'center_x':0.5}  
