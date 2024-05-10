@@ -7,7 +7,7 @@ from kivy.lang import Builder
 
 Builder.load_file("boxs.kv")
 
-class mygrid(Widget):
+class mylayout(Widget):
     name=ObjectProperty(None)
     age=ObjectProperty(None)
     def press(self):
@@ -20,7 +20,7 @@ class mygrid(Widget):
 
 class Super(App):
     def build(self):
-        return mygrid()
+        return mylayout()
     
 if __name__=='__main__':
     Super().run()

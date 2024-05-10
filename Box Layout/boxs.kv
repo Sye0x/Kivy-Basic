@@ -1,34 +1,9 @@
-<MyGrid>:
-    name:name
-    age:age
-    GridLayout:
-        cols: 1
-        size: root.width,root.height
-        GridLayout:
-            cols: 2
-
-            Label:
-                text: "Name"
-                font_size:18
-                
-            TextInput:
-                multiline: False
-                id:name
-            Label:
-                text: "Age"
-                font_size:18
-            
-            TextInput:
-                multiline: False
-                id:age
-        
+<Mylayout>:
+    BoxLayout:
+        orientation:'horizontal'
         Button:
-            text: "SUBMIT"
-            font_size:32
-            size_hint: None,None
-            width:200
-            height:40
-            on_press:root.press()
-            background_normal:""
-            background_color:(0,0,1,1)
-            color: 1 , 1 , 1 , 1
+            text:'Hello World!!'
+        Button:
+            text:'How are you all ??'
+        Button:
+            text:'GoodBye World!'    
