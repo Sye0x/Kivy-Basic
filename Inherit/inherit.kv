@@ -1,36 +1,29 @@
-<Button>
-    font_size:32
-    spacing: '10dp'
-<Label>
-    font_size:20
-    color: 0 , 0 , 1 , 1
-    
-<TextInput>
-    font_size:26
-    background_color:(1,0,0,1)
+<Button>:
+    font_size: 32
+    spacing: 10
+
+<Label>:
+    font_size: 20
+    color: (0, 0, 1, 1)
+
+<TextInput>:
+    font_size: 26
+    background_color: (1, 0, 0, 1)
     canvas.before:
-        color:
-            rgba:self.background_color
+        Color:
+            rgba: self.background_color
         Rectangle:
-            pos:self.pos
-            size:self.size
-<mylayout>
+            pos: self.pos
+            size: self.size
+
+<MyLayout>:
     BoxLayout:
-        size: root.width,root.height
-        orientation:'vertical'
+        size: root.width, root.height
+        orientation: 'vertical'
         Label:
-            text:'Name'
-        TextInput:
-            multiline:False
+            text: 'Name'
+
+   
         Label:
-            text:'Age'
-        TextInput:
-            multiline:False
-        Button:
-            text:'Submit'
-            background_color:1,0,0,1
-            color: 0 , 0 , 1, 1
-        Button:
-            text:'Clear'
-            background_color:0,0,1,1
-            color: 1 , 0 , 0 , 1        
+            text: 'Age'
+
