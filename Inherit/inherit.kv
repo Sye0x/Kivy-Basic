@@ -7,7 +7,13 @@
     
 <TextInput>
     font_size:26
-  
+    background_color:(1,0,0,1)
+    canvas.before:
+        color:
+            rgba:self.background_color
+        Rectangle:
+            pos:self.pos
+            size:self.size
 <mylayout>
     BoxLayout:
         size: root.width,root.height
