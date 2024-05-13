@@ -1,45 +1,8 @@
-<Label>:
-    # background_color: 1, 0, 0, 1
-    # canvas.before:
-    #     Color:
-    #         rgba: self.background_color
-    #     Rectangle:
-    #         pos: self.pos
-    #         size: self.size
-    color: 0, 1, 1, 1
-    bold: True
-    outline: 0, 0, 0
-    outline_width: 10
-
-<Button>:
-    background_normal: ""
-
-<TextInput>:
-    background_color: 1, 1, 1, 1
-    font_size: 32
-
 <MyLayout>:
-   
+    
     BoxLayout:
-        padding: ('10dp', '10dp', '10dp', '10dp')
-        spacing: '5dp'
-        size: root.width, root.height
-        orientation: 'vertical'
-        Label:
-            text: 'Name:'
-        TextInput:
-            multiline: False
-        Label:
-            text: 'Age:'
-        TextInput:
-            multiline: False
-        Button:
-            text: 'Submit'
-            background_color: 0, 1, 0, 1
-            color: 1, 1, 1, 1
-            font_size: 18
-        Button:
-            text: 'Clear'
-            background_color: 1, 0, 0, 1
-            color: 1, 1, 1, 1
-            font_size: 18
+        size: root.height,root.height
+        Image:
+            source:'bird.jpg'
+            allow_stretch:True
+            keep_ratio:False
