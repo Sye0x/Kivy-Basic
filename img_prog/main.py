@@ -5,7 +5,7 @@ from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
 
-Builder.load_file("inherit.kv")
+Builder.load_file("image.kv")
 
 class mylayout(Widget):
     name=ObjectProperty(None)
