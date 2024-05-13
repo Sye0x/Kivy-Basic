@@ -1,32 +1,20 @@
-<Button>:
-    font_size: 32
-    spacing: 10
 
-<Label>:
-    font_size: 20
-    color: (0, 0, 1, 1)
-    background_color: (1, 0, 0, 1)
+<MyLayout>:
     canvas.before:
         Color:
-            rgba: self.background_color
+            rgba:(1,0,1,1)
         Rectangle:
-            pos: self.pos
-            size: self.size
+            pos:self.pos
+            size:self.size
 
-
-<TextInput>:
-    font_size: 26
-    
-<MyLayout>:
     BoxLayout:
         size: root.width, root.height
         orientation: 'vertical'
         Label:
             text: 'Name'
-
-   
+            bold:True
         Label:
             text: 'Age'
-            color: 1 , 0 , 0 , 1
-            background_color:(0,0,1,1)
-
+            color: 1, 0, 0, 1
+            background_color: (0, 0, 1, 1)
+            bold:True
