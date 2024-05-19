@@ -1,31 +1,6 @@
 <MyGrid>:
-    name:name
-    age:age
     GridLayout:
-        cols: 1
         size: root.width,root.height
-        GridLayout:
-            cols: 2
-
-            Label:
-                text: "Name"
-                font_size:18
-                
-            TextInput:
-                multiline: False
-                id:name
-            Label:
-                text: "Age"
-                font_size:18
-            
-            TextInput:
-                multiline: False
-                id:age
+        Label:
+            text:'Hello'
         
-        Button:
-            text: "SUBMIT"
-            font_size:32
-            size_hint: None,None
-            width:200
-            height:40
-            on_press:root.press()
